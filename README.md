@@ -1,6 +1,6 @@
 <h1 align="center">Encriptador de texto</h1>
 <h3 align="center">BY: </h3>
-<p align="center"><img src="https://img.shields.io/badge/STATUS-EN-DESAROLLO-green"></p>
+<p align="center"><img src="https://img.shields.io/badge/STATUS-EN_DESAROLLO-orange"></p>
 
 ## :hammer:Funcionalidades del proyecto
 
