@@ -8,7 +8,6 @@
 - `Encriptador`: El texto dado por el usuario es encriptado por medio de un patrón establecido dentro del código.
 - `Desencriptador`: Reinterpreta el patrón generado y lo traduce mediante los parámetros establecidos para que el usuario pueda leerlo.
 - `Función de copiado`: Dentro del proyecto se habilita un botón de <strong>copiar</strong> para recoger el texto ya procesado y almacenarlo en el portapapeles del navegador.
-- `Función de pegado`: Dentro del proyecto se habilita un botón de <strong>pegar</strong> para utilizar el texto dentro del portapapeles del navegador e integrarlo al capturador de texto.
 
 ## Tecnologías utilizadas
 - `HTML`
