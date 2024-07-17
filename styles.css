@@ -1,0 +1,313 @@
+:root {
+
+  --Dark-blue-100: #609ED4;
+  --Dark-blue-200: #356EA9;
+  --Dark-blue-300: #0A3871;
+  --Dark-blue-400: #072B61;
+  --Dark-blue-500: #052051;
+
+  --Light-blue-100: #F3F5FC;
+  --Light-blue-200: #EFF1FA;
+  --Light-blue-300: #E9ECF8;
+  --Light-blue-400: #AAB2D5;
+  --Light-blue-500: #757FB2;
+
+  --Gray-100: #CED4DA;
+  --Gray-200: #ADB5BD;
+  --Gray-300: #868E96;
+  --Gray-400: #495057;
+  --Gray-500: #343A40;
+
+  --White: #fff;
+}
+
+/* Font */
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--Light-blue-200);
+  font-family: "Inter", sans-serif;
+  margin: 20px 20px;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  padding: 20px;
+
+}
+
+.contenedor-principal {
+  /* border: 2px solid green; */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* Sección logo alura */
+.mensaje-entrada {
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-right: 10px;
+
+}
+
+.logo-alura {
+  width: 32px;
+  height: 48px;
+}
+
+/* links de paginas */
+.accesos {
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+}
+
+.accesos a {
+  color: var(--Gray-500);
+}
+
+.git {
+  width: 32px;
+  height: 48px;
+}
+
+.linkedin {
+  width: 32px;
+  height: 48px;
+}
+
+/* Seccion de encritpar */
+.contenedor-entrada {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.entrada-anuncio {
+  /* border: 2px solid var(--Light-blue-200); */
+  display: flex;
+  font-size: 22px;
+  line-height: 40px;
+  gap: 10px;
+  color: var(--Dark-blue-300);
+}
+
+.entrada-area {
+  width: 570px;
+  height: 400px;
+  resize: none;
+  color: var(--Dark-blue-300);
+  background-color: var(--Light-blue-200);
+  padding: 15px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Advertencia de caracteres */
+.principal-indicación {
+  display: flex;
+  margin-left: 35px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 80%;
+  gap: 10px;
+  color: var(--Gray-400);
+}
+
+
+/* Sección de desencriptado */
+.mensaje-area {
+  width: 290px;
+  height: 544px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--White);
+  border-radius: 32px;
+  padding: 30px;
+  gap: 20px;
+  box-shadow: 0 0 8px var(--Gray-200);
+}
+
+.area-mensaje {
+  display: flex;
+  resize: none;
+  outline: none;
+  width: 230px;
+  height: auto;
+  cursor: default;
+}
+
+.area-muñeco {
+  display: flex;
+  width: 280px;
+}
+
+.area-alerta {
+  display: flex;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--Gray-500);
+}
+
+.area-alerta-sub {
+  display: flex;
+  text-align: center;
+  color: var(--Gray-300);
+}
+
+
+/* Seccion de botones */
+.contenedor-botones {
+  /* border: 2px solid yellow; */
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+
+}
+
+.encriptar {
+  width: 228px;
+  height: 57px;
+  background-color: var(--Dark-blue-300);
+  border: 1px solid var(--Dark-blue-300);
+  border-radius: 18px;
+  color: var(--White);
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.desencriptar {
+  width: 228px;
+  height: 57px;
+  background-color: var(--Light-blue-300);
+  border: 1px solid var(--Dark-blue-300);
+  border-radius: 18px;
+  color: var(--Dark-blue-300);
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.copiar {
+  width: 250px;
+  height: 57px;
+  background-color: var(--Light-blue-100);
+  border: 1px solid var(--Dark-blue-300);
+  border-radius: 18px;
+  color: var(--Dark-blue-300);
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (min-width:426px) and (max-width:768px) {
+
+  .contenedor-principal {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .mensaje-entrada {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .accesos {
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  .contenedor-entrada {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .entrada-area {
+    width: auto;
+    height: 246px;
+  }
+
+  .mensaje-area {
+    justify-content: center;
+    width: auto;
+    height: 133px;
+  }
+
+  .mensaje-area img,
+  button {
+    display: none;
+  }
+
+}
+
+@media (min-width: 319px) and (max-width:425px){
+
+  .contenedor-principal{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .mensaje-entrada{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .accesos{
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .contenedor-entrada{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .entrada-area{
+    width: 275px;
+    height: 200px;
+  }
+  .contenedor-botones{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mensaje-area {
+    justify-content: center;
+    width: auto;
+    height: auto;
+  }
+
+  .area-muñeco{
+    display: none;
+  }
+
+  .copiar{
+    display: none;
+  }
+}
