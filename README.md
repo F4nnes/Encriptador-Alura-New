@@ -10,6 +10,6 @@
 - `Función de copiado`: Dentro del proyecto se habilita un botón de <strong>copiar</strong> para recoger el texto ya procesado y almacenarlo en el portapapeles del navegador.
 
 ## Tecnologías utilizadas
-- `HTML`
-- `CSS`
-- `Javascript`
+- <p align="center"><img src="https://img.shields.io/badge/HTML5-orange"></p>
+- <p align="center"><img src="https://img.shields.io/badge/CSS-blue"></p>
+- <p align="center"><img src="https://img.shields.io/badge/JS-yellow"></p>
