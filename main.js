@@ -16,6 +16,7 @@ const btnEncriptar = document.getElementById("encriptar");
 const btnDesencriptar = document.getElementById("desencriptar");
 const btnCopiar = document.getElementById('copiar');
 const indicación = document.getElementById('anuncio');
+const respuesta = document.getElementById('sección-anuncio');
 
 
 //Función para encriptar
@@ -66,8 +67,15 @@ areaEncriptar.addEventListener("blur", () => {
     }
 });
 
+
 //Seccion de funcionamiento para botones
 btnEncriptar.addEventListener("click", () => {
     const textoEncriptado = encriptar(areaEncriptar.value);
     areaDesencriptar.value = textoEncriptado;
 });
+
+
+btnDesencriptar.addEventListener("click", ()=>{
+    const textoDesencriptado = desencriptar(areaDesencriptar.value);
+    areaDesencriptar.value = textoDesencriptado;
+})
