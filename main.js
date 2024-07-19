@@ -108,7 +108,7 @@ btnPegar.style.display = "none"
 function pegarDelPortapapeles() {
     navigator.clipboard.readText().then((text) => {
         areaEncriptar.value = text;
-        areaDesencriptar.value = text;
+        // areaDesencriptar.value = text;
     })
         .catch((err) => {
             alert("Error al pegar del portapapeles:", err);

@@ -270,9 +270,10 @@ main {
   }
 
   .mensaje-area {
+    display: flex;
     justify-content: center;
     width: auto;
-    height: 133px;
+    height: auto;
   }
 
   .mensaje-area img {
