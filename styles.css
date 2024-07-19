@@ -222,6 +222,18 @@ main {
   cursor: pointer;
 }
 
+.pegar{
+  width: 250px;
+  height: 57px;
+  background-color: var(--Light-blue-100);
+  border: 1px solid var(--Dark-blue-300);
+  border-radius: 18px;
+  color: var(--Dark-blue-300);
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 @media (min-width:426px) and (max-width:768px) {
 
   .contenedor-principal {
@@ -263,8 +275,7 @@ main {
     height: 133px;
   }
 
-  .mensaje-area img,
-  button {
+  .mensaje-area img {
     display: none;
   }
 
@@ -322,6 +333,10 @@ main {
   }
 
   .copiar {
+    display: none;
+  }
+  
+  .pegar{
     display: none;
   }
 }

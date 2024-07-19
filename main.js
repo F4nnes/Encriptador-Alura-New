@@ -65,6 +65,7 @@ btnEncriptar.addEventListener("click", () => {
     // Muestra el boton "copiar" solo si hay texto en areaDesencriptar
     if (areaDesencriptar.value !== "") {
         btnCopiar.style.display = "block";
+        respuesta.style.display = "none";
     }
 });
 
@@ -75,6 +76,7 @@ btnDesencriptar.addEventListener("click", () => {
     // Muestra el boton "copiar" solo si hay texto en areaDesencriptar
   if (areaDesencriptar.value !== "") {
     btnCopiar.style.display = "block";
+    respuesta.style.display = "none";
   }
 });
 
@@ -98,3 +100,4 @@ btnCopiar.addEventListener("click", copiarAlPortapapeles);
 
 
 //seccion de anuncio-muñeco
+respuesta.style.display= "block"
