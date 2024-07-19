@@ -1,9 +1,9 @@
 
 //Matriz de funcionamiento
 const matrizCode = [
-    ["a", "ai"],
     ["e", "enter"],
     ["i", "imes"],
+    ["a", "ai"],
     ["o", "ober"],
     ["u", "ufat"]
 ];
@@ -18,6 +18,7 @@ const btnCopiar = document.getElementById('copiar');
 const respuesta = document.getElementById('sección-anuncio');
 
 
+
 //Función para encriptar
 function encriptar(fraseEncriptada) {
     for (let i = 0; i < matrizCode.length; i++) {
@@ -25,7 +26,7 @@ function encriptar(fraseEncriptada) {
             fraseEncriptada = fraseEncriptada.replace(
                 new RegExp(matrizCode[i][0], "g"),
                 matrizCode[i][1]
-            )
+            );
         }
     }
 
@@ -61,25 +62,39 @@ areaEncriptar.addEventListener("input", restriccion);
 btnEncriptar.addEventListener("click", () => {
     const textoEncriptado = encriptar(areaEncriptar.value);
     areaDesencriptar.value = textoEncriptado;
+    // Muestra el boton "copiar" solo si hay texto en areaDesencriptar
+    if (areaDesencriptar.value !== "") {
+        btnCopiar.style.display = "block";
+    }
 });
 
 //desencriptar
 btnDesencriptar.addEventListener("click", () => {
     const textoDesencriptado = desencriptar(areaEncriptar.value);
     areaDesencriptar.value = textoDesencriptado;
-})
+    // Muestra el boton "copiar" solo si hay texto en areaDesencriptar
+  if (areaDesencriptar.value !== "") {
+    btnCopiar.style.display = "block";
+  }
+});
+
+//Inicia con el boton "copiar" oculto
+btnCopiar.style.display = "none";
 
 //copiar
 function copiarAlPortapapeles() {
     navigator.clipboard.writeText(areaDesencriptar.value)
-      .then(() => {
-        alert("Texto copiado al portapapeles");
-        // areaEncriptar.value = "";
-        areaDesencriptar.value = "";
-      })
-      .catch((err) => {
-        alert("Error al copiar al portapapeles:", err);
-      });
-  };
+        .then(() => {
+            alert("Texto copiado al portapapeles");
+            // areaEncriptar.value = "";
+            areaDesencriptar.value = "";
+        })
+        .catch((err) => {
+            alert("Error al copiar al portapapeles:", err);
+        });
+};
 
-  btnCopiar.addEventListener("click", copiarAlPortapapeles);
+btnCopiar.addEventListener("click", copiarAlPortapapeles);
+
+
+//seccion de anuncio-muñeco

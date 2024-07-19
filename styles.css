@@ -96,6 +96,7 @@ main {
 }
 
 #area-encriptar {
+  text-align: center;
   font-family: "Inter", sans-serif;
   font-size: 22px;
   color: var(--Dark-blue-300);
@@ -252,6 +253,10 @@ main {
     height: 246px;
   }
 
+  #area-encriptar{
+    text-align: center;
+  }
+
   .mensaje-area {
     justify-content: center;
     width: auto;
@@ -301,6 +306,9 @@ main {
   .contenedor-botones {
     display: flex;
     flex-direction: column;
+  }
+  #area-encriptar{
+    text-align: center;
   }
 
   .mensaje-area {
