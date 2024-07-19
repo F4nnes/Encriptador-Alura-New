@@ -15,6 +15,7 @@ const areaDesencriptar = document.getElementById("area-desencriptar");
 const btnEncriptar = document.getElementById("encriptar");
 const btnDesencriptar = document.getElementById("desencriptar");
 const btnCopiar = document.getElementById('copiar');
+const btnPegar = document.getElementById('pegar');
 const respuesta = document.getElementById('sección-anuncio');
 
 
@@ -74,10 +75,10 @@ btnDesencriptar.addEventListener("click", () => {
     const textoDesencriptado = desencriptar(areaEncriptar.value);
     areaDesencriptar.value = textoDesencriptado;
     // Muestra el boton "copiar" solo si hay texto en areaDesencriptar
-  if (areaDesencriptar.value !== "") {
-    btnCopiar.style.display = "block";
-    respuesta.style.display = "none";
-  }
+    if (areaDesencriptar.value !== "") {
+        btnCopiar.style.display = "block";
+        respuesta.style.display = "none";
+    }
 });
 
 //Inicia con el boton "copiar" oculto
@@ -90,6 +91,8 @@ function copiarAlPortapapeles() {
             alert("Texto copiado al portapapeles");
             // areaEncriptar.value = "";
             areaDesencriptar.value = "";
+            // Mostrar botón "Pegar" después de copiar
+            btnPegar.style.display = "block";
         })
         .catch((err) => {
             alert("Error al copiar al portapapeles:", err);
@@ -98,6 +101,24 @@ function copiarAlPortapapeles() {
 
 btnCopiar.addEventListener("click", copiarAlPortapapeles);
 
+//Inicia boton "pegar" oculto
+btnPegar.style.display = "none"
+
+//Función de pegar del portapapeles
+function pegarDelPortapapeles() {
+    navigator.clipboard.readText().then((text) => {
+        areaEncriptar.value = text;
+        areaDesencriptar.value = text;
+    })
+        .catch((err) => {
+            alert("Error al pegar del portapapeles:", err);
+        });
+
+};
+
+btnPegar.addEventListener("click", pegarDelPortapapeles);
+
+
 
 //seccion de anuncio-muñeco
-respuesta.style.display= "block"
+respuesta.style.display = "block"
