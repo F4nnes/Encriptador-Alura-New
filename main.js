@@ -15,7 +15,6 @@ const areaDesencriptar = document.getElementById("area-desencriptar");
 const btnEncriptar = document.getElementById("encriptar");
 const btnDesencriptar = document.getElementById("desencriptar");
 const btnCopiar = document.getElementById('copiar');
-const indicación = document.getElementById('anuncio');
 const respuesta = document.getElementById('sección-anuncio');
 
 
@@ -56,26 +55,31 @@ const restriccion = (event) => {
 
 areaEncriptar.addEventListener("input", restriccion);
 
-//Funcion de anuncio
-areaEncriptar.addEventListener("focus", () => {
-    indicación.style.display = "none";
-});
-
-areaEncriptar.addEventListener("blur", () => {
-    if (areaEncriptar.value === "") {
-        indicación.style.display = "block";
-    }
-});
-
 
 //Seccion de funcionamiento para botones
+//encriptar
 btnEncriptar.addEventListener("click", () => {
     const textoEncriptado = encriptar(areaEncriptar.value);
     areaDesencriptar.value = textoEncriptado;
 });
 
-
-btnDesencriptar.addEventListener("click", ()=>{
-    const textoDesencriptado = desencriptar(areaDesencriptar.value);
+//desencriptar
+btnDesencriptar.addEventListener("click", () => {
+    const textoDesencriptado = desencriptar(areaEncriptar.value);
     areaDesencriptar.value = textoDesencriptado;
 })
+
+//copiar
+function copiarAlPortapapeles() {
+    navigator.clipboard.writeText(areaDesencriptar.value)
+      .then(() => {
+        alert("Texto copiado al portapapeles");
+        // areaEncriptar.value = "";
+        areaDesencriptar.value = "";
+      })
+      .catch((err) => {
+        alert("Error al copiar al portapapeles:", err);
+      });
+  };
+
+  btnCopiar.addEventListener("click", copiarAlPortapapeles);

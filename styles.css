@@ -42,6 +42,7 @@ main {
 
 }
 
+
 .contenedor-principal {
   /* border: 2px solid green; */
   display: flex;
@@ -94,12 +95,9 @@ main {
   gap: 10px;
 }
 
-.entrada-anuncio {
-  /* border: 2px solid var(--Light-blue-200); */
-  display: flex;
+#area-encriptar {
+  font-family: "Inter", sans-serif;
   font-size: 22px;
-  line-height: 40px;
-  gap: 10px;
   color: var(--Dark-blue-300);
 }
 
@@ -164,10 +162,17 @@ main {
   color: var(--Gray-500);
 }
 
+#area-desencriptar {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  color: var(--Gray-400);
+  font-size: 16px;
+}
+
 .area-alerta-sub {
   display: flex;
   text-align: center;
-  color: var(--Gray-300);
+  
 }
 
 
@@ -260,9 +265,9 @@ main {
 
 }
 
-@media (min-width: 319px) and (max-width:425px){
+@media (min-width: 319px) and (max-width:425px) {
 
-  .contenedor-principal{
+  .contenedor-principal {
     /* border: 2px solid green; */
     display: flex;
     flex-direction: column;
@@ -270,29 +275,30 @@ main {
     gap: 20px;
   }
 
-  .mensaje-entrada{
+  .mensaje-entrada {
     display: flex;
     flex-direction: row;
   }
 
-  .accesos{
+  .accesos {
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
   }
 
-  .contenedor-entrada{
+  .contenedor-entrada {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .entrada-area{
+  .entrada-area {
     width: 275px;
     height: 200px;
   }
-  .contenedor-botones{
+
+  .contenedor-botones {
     display: flex;
     flex-direction: column;
   }
@@ -303,11 +309,11 @@ main {
     height: auto;
   }
 
-  .area-muñeco{
+  .area-muñeco {
     display: none;
   }
 
-  .copiar{
+  .copiar {
     display: none;
   }
 }
