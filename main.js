@@ -119,6 +119,5 @@ function pegarDelPortapapeles() {
 btnPegar.addEventListener("click", pegarDelPortapapeles);
 
 
-
 //seccion de anuncio-muñeco
 respuesta.style.display = "block"
