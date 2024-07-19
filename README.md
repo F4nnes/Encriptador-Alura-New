@@ -17,4 +17,10 @@
 
 <h3 align="center">Elaborador por:</h3>
 
+## :hammer:Responsividad
+
+
+
 ![f4nnes-blue](https://github.com/user-attachments/assets/1114b183-0bc5-4476-9ce8-67955d18f540)
+
+
