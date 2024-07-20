@@ -20,16 +20,18 @@
 
 ## :hammer:Responsividad
 
-
 <h2>Versión Movil</h2>
-![version-movil](https://imgur.com/a/KrknI79)
+
+![movil](https://github.com/user-attachments/assets/9d2387a0-6db0-4a5d-9012-afe114faf779)
 
 <h2>Versión Tableta</h2>
 
+![tableta](https://github.com/user-attachments/assets/20aeae18-14b7-412d-855c-4d1db40c059c)
+
 <h2>Versión de Escritorio</h2>
 
+![ordenador](https://github.com/user-attachments/assets/21353ebc-a7a0-4f03-9af0-9783a894b4fd)
 
 
-![f4nnes-blue](https://github.com/user-attachments/assets/1114b183-0bc5-4476-9ce8-67955d18f540)
 
 
