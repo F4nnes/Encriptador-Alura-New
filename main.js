@@ -17,7 +17,7 @@ const btnDesencriptar = document.getElementById("desencriptar");
 const btnCopiar = document.getElementById('copiar');
 const btnPegar = document.getElementById('pegar');
 const respuesta = document.getElementById('sección-anuncio');
-
+const reinicio = document.getElementById('limpiar');
 
 
 //Función para encriptar
@@ -63,10 +63,12 @@ areaEncriptar.addEventListener("input", restriccion);
 btnEncriptar.addEventListener("click", () => {
     const textoEncriptado = encriptar(areaEncriptar.value);
     areaDesencriptar.value = textoEncriptado;
+    ajustarAlturaAreaDesencriptar();
     // Muestra el boton "copiar" solo si hay texto en areaDesencriptar
     if (areaDesencriptar.value !== "") {
         btnCopiar.style.display = "block";
         respuesta.style.display = "none";
+        reinicio.style.display ="block";
     }
 });
 
@@ -74,10 +76,12 @@ btnEncriptar.addEventListener("click", () => {
 btnDesencriptar.addEventListener("click", () => {
     const textoDesencriptado = desencriptar(areaEncriptar.value);
     areaDesencriptar.value = textoDesencriptado;
+    ajustarAlturaAreaDesencriptar();
     // Muestra el boton "copiar" solo si hay texto en areaDesencriptar
     if (areaDesencriptar.value !== "") {
         btnCopiar.style.display = "block";
         respuesta.style.display = "none";
+        reinicio.style.display ="block";
     }
 });
 
@@ -121,3 +125,24 @@ btnPegar.addEventListener("click", pegarDelPortapapeles);
 
 //seccion de anuncio-muñeco
 respuesta.style.display = "block"
+
+//cambio de tamaño area texto
+function ajustarAlturaAreaDesencriptar() {
+    areaDesencriptar.style.height = "auto";
+    areaDesencriptar.style.height = areaDesencriptar.scrollHeight + "px";
+}
+
+//boton limpiar (reset)
+reinicio.style.display ="none"
+
+//funcion de reinicio
+function reiniciarEncriptador() {
+    areaEncriptar.value = "";
+    areaDesencriptar.value = "";
+    btnCopiar.style.display = "none";
+    btnPegar.style.display = "none";
+    respuesta.style.display = "block";
+    reinicio.style.display = "none";
+  }
+
+  reinicio.addEventListener("click", reiniciarEncriptador);

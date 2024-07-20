@@ -143,7 +143,7 @@ main {
 
 .area-mensaje {
   display: flex;
-  /* resize: none; */
+  resize: none;
   outline: none;
   width: 230px;
   height: auto;
@@ -233,6 +233,19 @@ main {
   font-size: 16px;
   cursor: pointer;
 }
+
+.limpiar{
+  width: 228px;
+  height: 57px;
+  background-color: var(--Dark-blue-300);
+  border: 1px solid var(--Dark-blue-300);
+  border-radius: 18px;
+  color: var(--White);
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 
 @media (min-width:426px) and (max-width:768px) {
 
