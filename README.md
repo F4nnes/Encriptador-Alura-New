@@ -22,7 +22,7 @@
 
 
 <h2>Versión Movil</h2>
-[version-movil](https://imgur.com/a/KrknI79)
+![version-movil](https://imgur.com/a/KrknI79)
 
 <h2>Versión Tableta</h2>
 
