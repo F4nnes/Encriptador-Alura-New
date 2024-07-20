@@ -9,7 +9,6 @@ const matrizCode = [
 ];
 
 //Variables de elementos a utilizar
-
 const areaEncriptar = document.getElementById("area-encriptar");
 const areaDesencriptar = document.getElementById("area-desencriptar");
 const btnEncriptar = document.getElementById("encriptar");
@@ -68,7 +67,7 @@ btnEncriptar.addEventListener("click", () => {
     if (areaDesencriptar.value !== "") {
         btnCopiar.style.display = "block";
         respuesta.style.display = "none";
-        reinicio.style.display ="block";
+        reinicio.style.display = "block";
     }
 });
 
@@ -81,7 +80,7 @@ btnDesencriptar.addEventListener("click", () => {
     if (areaDesencriptar.value !== "") {
         btnCopiar.style.display = "block";
         respuesta.style.display = "none";
-        reinicio.style.display ="block";
+        reinicio.style.display = "block";
     }
 });
 
@@ -123,7 +122,7 @@ function pegarDelPortapapeles() {
 btnPegar.addEventListener("click", pegarDelPortapapeles);
 
 
-//seccion de anuncio-muñeco
+//Sección de anuncio-muñeco
 respuesta.style.display = "block"
 
 //cambio de tamaño area texto
@@ -133,9 +132,9 @@ function ajustarAlturaAreaDesencriptar() {
 }
 
 //boton limpiar (reset)
-reinicio.style.display ="none"
+reinicio.style.display = "none"
 
-//funcion de reinicio
+//Función de reinicio
 function reiniciarEncriptador() {
     areaEncriptar.value = "";
     areaDesencriptar.value = "";
@@ -143,6 +142,6 @@ function reiniciarEncriptador() {
     btnPegar.style.display = "none";
     respuesta.style.display = "block";
     reinicio.style.display = "none";
-  }
+}
 
-  reinicio.addEventListener("click", reiniciarEncriptador);
+reinicio.addEventListener("click", reiniciarEncriptador);
