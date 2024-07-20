@@ -20,6 +20,12 @@
 
 ## :hammer:Responsividad
 
+<h2>Version Movil</h2>
+![Visualizacion de app en dispositivo movil](https://github.com/user-attachments/assets/4d35fc3f-229e-4b15-a8e4-114f1a226cda)
+<h2>Versión Tableta</h2>
+![Visualizacion de app en tableta](https://github.com/user-attachments/assets/e62e9746-3d84-4114-acbd-7053c27c20e6)
+<h2>Versión de Escritorio</h2>
+![Visualización de app en ordenador](https://github.com/user-attachments/assets/e169ec58-fb04-4d4a-abc2-d47256659f3d)
 
 
 ![f4nnes-blue](https://github.com/user-attachments/assets/1114b183-0bc5-4476-9ce8-67955d18f540)
