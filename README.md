@@ -13,7 +13,8 @@
 - `Encriptador`: El texto dado por el usuario es encriptado por medio de un patrón establecido dentro del código.
 - `Desencriptador`: Reinterpreta el patrón generado y lo traduce mediante los parámetros establecidos para que el usuario pueda leerlo.
 - `Función de copiado`: Dentro del proyecto se habilita un botón de <strong>copiar</strong> para recoger el texto ya procesado y almacenarlo en el portapapeles del navegador.
-- `Funcion de pegago`: Lee el texto almacenado en el portapapeles y lo pega nuevamente en el area para iniciar el proceso de encriptar o desencriptar respectivamente.
+- `Función de pegado`: Lee el texto almacenado en el portapapeles y lo pega nuevamente en el area para iniciar el proceso de encriptar o desencriptar respectivamente.
+- `Función de limpiar encriptador`: Se genero un botón de limpieza del encriptador para evitar recargar el navegador constantemente.
 
 <h3 align="center">Elaborador por:</h3>
 
