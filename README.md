@@ -16,7 +16,7 @@
 - `Función de pegado`: Lee el texto almacenado en el portapapeles y lo pega nuevamente en el area para iniciar el proceso de encriptar o desencriptar respectivamente.
 - `Función de limpiar encriptador`: Se genero un botón de limpieza del encriptador para evitar recargar el navegador constantemente.
 
-<h3 align="center">Elaborador por:</h3>
+<h3 align="center">Elaborador por: Tonatiuh Jasso</h3>
 
 ## :hammer:Responsividad
 
